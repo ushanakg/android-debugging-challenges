@@ -19,18 +19,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        /*btnDay = findViewById(R.id.btnDay);
-        btnBackground = findViewById(R.id.btnBackground);
-        btnToolbar = findViewById(R.id.btnToolbar);
-        btnMovies = findViewById(R.id.btnMovies);
-
-        btnDay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                launchCurrentDayActivity(view);
-            }
-        });*/
     }
 
 

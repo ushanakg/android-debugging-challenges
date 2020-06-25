@@ -41,6 +41,7 @@ public class MoviesActivity extends AppCompatActivity {
 
         // Attach the adapter to a ListView
         rvMovies.setAdapter(adapter);
+        // added layout manager to recycler view so that movie viewholders can be arranged
         rvMovies.setLayoutManager(new LinearLayoutManager(this));
 
         fetchMovies();
@@ -58,6 +59,7 @@ public class MoviesActivity extends AppCompatActivity {
                     Log.i("MoviesActivity", "Results: " + moviesJson.toString());
 
                     movies.addAll(Movie.fromJSONArray(moviesJson));
+                    // added notification to adapter that dataset has changed
                     adapter.notifyDataSetChanged();
 
                     Log.d("MoviesActivity", "Movies: " + movies.toString());

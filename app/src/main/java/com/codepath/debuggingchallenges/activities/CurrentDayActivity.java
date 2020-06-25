@@ -22,6 +22,7 @@ public class CurrentDayActivity extends AppCompatActivity {
 
 
         Log.d("CurrentDayActivity", "Day: " + getDayOfMonth());
+        // converted int to string so that TextView can actually set day
         tvDay.setText(Integer.toString(getDayOfMonth()));
     }
 
