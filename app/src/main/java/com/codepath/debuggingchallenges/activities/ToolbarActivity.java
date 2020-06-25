@@ -15,11 +15,11 @@ public class ToolbarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_toolbar);
 
         // Find the toolbar view inside the activity layout
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar);
 
         // Sets the Toolbar to act as the ActionBar for this Activity window.
         // Make sure the toolbar exists in the activity and is not null
-        setActionBar(toolbar);
+        setSupportActionBar(toolbar);
 
         TextView tvDescription = (TextView) findViewById(R.id.tvDescription);
         tvDescription.setText(R.string.hello);

@@ -8,27 +8,31 @@
     tools:context=".activities.MainActivity">
 
     <Button
+        android:id="@+id/btnDay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/what_day_is_it"
-        android:onClick="launchCurrentDayActivity"/>
+        android:onClick="launchCurrentDayActivity"
+        android:text="@string/what_day_is_it" />
 
     <Button
+        android:id="@+id/btnBackground"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/background_changer"
-        android:onClick="launchChangeBackgroundActivity"/>
+        android:onClick="launchChangeBackgroundActivity"
+        android:text="@string/background_changer" />
 
     <Button
+        android:id="@+id/btnToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/toolbar"
-        android:onClick="launchToolbarActivity"/>
+        android:onClick="launchToolbarActivity"
+        android:text="@string/toolbar" />
 
     <Button
+        android:id="@+id/btnMovies"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/view_movies"
-        android:onClick="launchMoviesActivity"/>
+        android:onClick="launchMoviesActivity"
+        android:text="@string/view_movies" />
 
 </LinearLayout>
